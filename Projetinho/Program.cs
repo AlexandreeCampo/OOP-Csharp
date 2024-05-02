@@ -8,7 +8,7 @@ namespace Projeitnho
     {
         static void Main (string[] args)
         {
-            var course = new Course();
+            
         }
     }
 }
