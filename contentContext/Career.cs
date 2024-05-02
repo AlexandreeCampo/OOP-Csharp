@@ -1,10 +1,15 @@
 namespace Projetinho.ContentContext
 {
-    public class Career
+    public class Career : Content
     {
-        public class Career : Content
+        public Career()
         {
-            public int Courses { get; set; }
+            Items = new List<CareerItem>();
         }
+
+        public IList<CareerItem> Items { get; set; }
+
+        public int TotalCourses => Items.Count;
+        //Expression-bodied
     }
 }

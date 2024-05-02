@@ -15,5 +15,7 @@ namespace Projetinho.ContentContext
 
         public IList<Lecture> Lecture { get; set; }
 
+        public int DurationInMinutes { get; set; }
+
     }
 }
