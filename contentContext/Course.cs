@@ -2,7 +2,8 @@ namespace Projetinho.ContentContext
 {
     public class Course : Content
     {
-        public Course() // List inicialization
+        public Course(string title, string url) // List inicialization
+            :base(title, url)
         {
             Modules = new List<Module>();
         }

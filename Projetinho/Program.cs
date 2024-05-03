@@ -1,6 +1,9 @@
 ﻿using System;
-using System.Net.Mime;
-using System.Runtime.InteropServices;
+using System.Collections.Generic;
+using System.Linq;
+using Projeitnho.ContentContext;
+using Projeitnho.SubscriptionContext;
+
 
 namespace Projeitnho
 {
@@ -8,15 +11,17 @@ namespace Projeitnho
     {
         static void Main (string[] args)
         {
-            var course = new Course();
-            course.Level = ContentContext.Enums.EContentLevel.Beginner
-            foreach (var item in course.Modules)
+            var articles = new List<Article>();
+            articles.Add(new Article("Article about OOP", "object-orientation"));
+            articles.Add(new Article("Article about C#", "csharp"));
+            articles.Add(new Article("Article about .NET", "dotnet"));
+
+            foreach (var article in articles)
             {
-                
+                Console.WriteLine(article.Id);
+                Console.WriteLine(article.Title);
+                Console.WriteLine(article.Url);
             }
-            var career = new Career();
-            career.Items.Add(new CareerItem());
-            Console.WriteLine(career.TotalCourses);
         }
     }
 }
