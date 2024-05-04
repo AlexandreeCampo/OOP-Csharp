@@ -22,6 +22,19 @@ namespace Projeitnho
                 Console.WriteLine(article.Title);
                 Console.WriteLine(article.Url);
             }
+
+            var courses = new List<Course>();
+            var courseOOP = new Course("Fundamentos OOP", "fundamentos-oop");
+            var courseCsharp = new Course("Fundamentos C#", "fundamentos-csharp");
+            var courseAspNet = new Course("Fundamentos ASP.NET", "fundamentos-aspnet");
+
+            courses.Add(courseOOP);
+            courses.Add(courseCsharp);
+            courses.Add(courseAspNet);
+
+            var careers = new List<Career>();
+            var career = new Career("Especialista .NET", "especialista-dotnet");
+            var careerItem = new CareerItem(1, "Comece por aqui", "", null);
         }
     }
 }
