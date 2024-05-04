@@ -33,8 +33,27 @@ namespace Projeitnho
             courses.Add(courseAspNet);
 
             var careers = new List<Career>();
-            var career = new Career("Especialista .NET", "especialista-dotnet");
-            var careerItem = new CareerItem(1, "Comece por aqui", "", null);
+            var careerDotnet = new Career("Especialista .NET", "especialista-dotnet");
+            var careerItem2 = new CareerItem(2, "Aprenda OOP", "", courseOOP);
+            var careerItem = new CareerItem(1, "Comece por aqui", "", courseCsharp);
+            var careerItem3 = new CareerItem(3, "Aprenda .NET", "", courseAspNet);
+
+            careerDotnet.Items.Add(careerItem2);
+            careerDotnet.Items.Add(careerItem1);
+            careerDotnet.Items.Add(careerItem3);
+            careers.Add(careerDotnet);
+
+            foreach (var career in careers)
+            {
+                Console.WriteLine(career.Title);
+                foreach (var item in career.Items.OrderBy(x=> x.Order))
+                {
+                    Console.WriteLine($"{item.Order} ─ {item.Title}");
+                    Console.WriteLine(item.Course.Title);
+                    Console.WriteLine(item.Course.Level);
+
+                }
+            }
         }
     }
 }

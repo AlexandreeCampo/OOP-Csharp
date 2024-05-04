@@ -1,9 +1,12 @@
-namespace Balta.ContentContext
+namespace Projetinho.ContentContext
 {
     public class CareerItem
     {
         public CareerItem(int order, string title, string description, Course course)
         {
+            if (course == null)
+                throw new System.Exception("O curso não pode ser nulo");
+
             Order = order;
             Title = title;
             Description = description;
