@@ -2,9 +2,9 @@ using System.Collections.Generic;
 
 namespace Projetinho.ContentContext
 {
-    public class Module //List
+    public class Module : Base
     {
-        public Course ()
+        public Module()
         {
             Lectures = new List<Lecture>();
         }

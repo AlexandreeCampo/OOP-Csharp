@@ -2,16 +2,23 @@ namespace Projetinho.NotificationContext
 {
     public abstract class Notifiable
     {
-        public IList<Notification> Notifications { get; set;}
+        public List<Notification> Notifications { get; set;}
         
-        public void Add(Notification notifications)
+        public Notifiable()
+        {
+            Notifications = new List<Notification>();
+        }
+
+        public void AddNotification(Notification notifications)
         {
             Notifications.Add(notification);
         }
 
-        public void AddRange(IEnumerable<Notification> notifications)
+        public void AddNotifications(IEnumerable<Notification> notifications)
         {
             Notifications.AddRange(notifications);
         }
+
+        public bool IsInvalid => Notifications.Any();
     }
 }

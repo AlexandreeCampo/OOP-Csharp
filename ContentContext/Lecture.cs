@@ -2,7 +2,7 @@ using Projetinho.ContentContext.Enums;
 
 namespace.ContentContext
 {
-    public class Lecture
+    public class Lecture : Base
     {
         public int Order { get; set; }
 
