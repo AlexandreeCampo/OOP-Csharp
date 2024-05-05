@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.Linq;
+
 namespace Projetinho.NotificationContext
 {
     public abstract class Notifiable

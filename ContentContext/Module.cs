@@ -10,12 +10,7 @@ namespace Projetinho.ContentContext
         }
 
         public int Order { get; set; }
-
         public string Title { get; set; }
-
         public IList<Lecture> Lecture { get; set; }
-
-        public int DurationInMinutes { get; set; }
-
     }
 }

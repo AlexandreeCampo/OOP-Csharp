@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using Projetinho.ContentContext.Enums;
 namespace Projetinho.ContentContext
 {
     public class Course : Content
@@ -9,11 +11,8 @@ namespace Projetinho.ContentContext
         }
         
         public string Tag { get; set; }
-
         public IList<Module> Modules { get; set; }
-
         public int DurationInMinutes { get; set; }
-
         public EContentLevel Level { get; set; }
     }
 

@@ -7,9 +7,9 @@ namespace Projetinho.NotificationContext
 
         }
 
-        public Notification(string message, string message)
+        public Notification(string property, string message)
         {
-            Property = Property;
+            Property = property;
             Message = message;
         }
 

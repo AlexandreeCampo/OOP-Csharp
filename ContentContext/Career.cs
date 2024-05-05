@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Projetinho.ContentContext
 {
     public class Career : Content
@@ -9,7 +11,6 @@ namespace Projetinho.ContentContext
         }
 
         public IList<CareerItem> Items { get; set; }
-
         public int TotalCourses => Items.Count;
         //Expression-bodied
     }

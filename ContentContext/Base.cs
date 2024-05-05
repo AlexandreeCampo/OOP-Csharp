@@ -9,6 +9,6 @@ namespace Projetinho.ContentContext
             Id = Guid.NewGuid();
         }
 
-        public int Guid Id { get; set; } // Guid is a abreviation for Global Unique Identify
+        public Guid Id { get; set; } // Guid is a abreviation for Global Unique Identify
     }
 }
