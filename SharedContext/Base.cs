@@ -1,6 +1,6 @@
 using Projetinho.NotificationContext;
 
-namespace Projetinho.ContentContext
+namespace Projetinho.SharedContext
 {
     public abstract class Base : Notifiable
     {

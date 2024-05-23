@@ -1,3 +1,5 @@
+using Projetinho.SharedContext;
+
 namespace Projetinho.ContentContext
 {
     public abstract class Content : Base

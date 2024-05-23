@@ -1,4 +1,5 @@
 using Projetinho.NotificationContext;
+using Projetinho.SharedContext;
 
 namespace Projetinho.ContentContext
 {

@@ -1,4 +1,5 @@
 using Projetinho.ContentContext.Enums;
+using Projetinho.SharedContext;
 
 namespace Projetinho.ContentContext
 {
